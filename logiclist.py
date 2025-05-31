@@ -1,30 +1,30 @@
 """
-Exercício de Lógica
-Autor: Vinicius Godoy
+Logic Exercise
+Onwer: Vinicius Godoy
 Data: 27/05/2025
-Plataforma: Udemy
+Plataform: Udemy
 Professor: Ryan Aragão
 """
 
-lista = ['Vinicius', 'Lethicia', 'Olivete', 'Marcia', 'Julia', 'JP', 'Junior', 'Idália']
+list = ['Vinicius', 'Lethicia', 'Olivete', 'Marcia', 'Julia', 'JP', 'Junior', 'Idália']
 
 while True:
     print("""
-        1. Adicionar Pessoa
-        2. Buscar por Pessoa
+        1. Including People
+        2. Search People
         """)
 
-escolha = int(input("Digite a opção desejada: "))
-if escolha == 1:
-    pessoa = input("Digite o nome a ser adicionado: ")
-    lista.append(pessoa)
+choice = int(input("Insert the required option: "))
+if choice == 1:
+    people = input("Insert the name to including: ")
+    lista.append(people)
 
-    if escolha == 2:
-        pessoa = input("Digite o nome a ser buscado: ")
+    if choice == 2:
+        people = input("Insert the name to search: ")
 
-if pessoa in lista:
-    print("Pessoa adicionada com sucesso!")
-elif pessoa not in lista:
-    print("Pessoa não esta na lista")
+if people in list:
+    print("People inserted successfully! ")
+elif people not in list:
+    print("Sorry, the people doensn't in the list")
 else:
-    print("Pessoa invalida")
+    print("Invalid People")
