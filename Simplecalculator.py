@@ -8,42 +8,43 @@ Teacher: Ryan Aragão
 
 from typing import Any
 
-#Usuário digitará o primeiro número
-n1 = int(input("Digite o primeiro Numero: "))
-#Usuário digitará a operação desejada
-operacao = str (input("Digite o operacão: "))
-#Usuário digitará o segundo número
-n2 = int(input("Digite o segundo Numero: "))
+#User inserted a first number
+n1 = int(input("Insert the first number: "))
+#User inserted the required option
+option = str (input("Insert the operator: "))
+#User inserted a second number
+n2 = int(input("Insert the second number: "))
 
 
-#Variáveis e seus tipos
-subtracao = float
-divisao = float
-multiplicacao = int
-potenciacao = int
-resdivisao = float
+#variables and your types
+addiction = int
+subtraction = float
+division = float
+multiplication = int
+potentiation = int
+resdivision = float
 
-#Se o usuário desejar que a calculadora faça uma operação de soma, a função será a de baixo
-if operacao == "+":
-    soma = n1 + n2
-    print("A soma entre {} + {} = {}".format(n1, n2, soma))
-#Se o usuário desejar que a calculadora faça uma operação de subtração, a função será a de baixo
-elif operacao == "-":
-    subtracao = n1 - n2
-    print("A subtração entre {} - {} = {}".format(n1, n2, subtracao))
-#Se o usuário desejar que a calculadora faça uma operação de multiplicação, a função será a de baixo
-elif operacao == "*":
-    multiplicacao = n1 * n2
-    print("A multiplicação entre {} * {} = {}".format(n1, n2, multiplicacao))
-#Se o usuário desejar que a calculadora faça uma operação de potenciação, a função será a de baixo
-elif operacao == "**":
-    potenciacao = n1 ** n2
-    print("A Potenciação entre {}**{} = {}".format(n1, n2, potenciacao))
-#Se o usuário desejar que a calculadora faça uma operação de resto de divisão, a função será a de baixo
-elif operacao == "//":
-    resdivisao = n1 // n2
-    print("O resto da divisão entre {} // {} = {}".format(n1, n2, resdivisao))
-#Se o usuário desejar que a calculadora faça uma operação de divisão, a função será a de baixo
+#If the user required the calculator do the addiction, the funcion is below
+if option == "+":
+    addiction = n1 + n2
+    print("A soma entre {} + {} = {}".format(n1, n2, addiction))
+#If the user required the calculator do the subtraction, the funcion is below
+elif option == "-":
+    subtraction = n1 - n2
+    print("A subtração entre {} - {} = {}".format(n1, n2, subtraction))
+#If the user required the calculator do the multiplication, the funcion is below
+elif option == "*":
+    multiplication = n1 * n2
+    print("A multiplicação entre {} * {} = {}".format(n1, n2, multiplication))
+#If the user required the calculator do the potentiation, the funcion is below
+elif option == "**":
+    potentiation = n1 ** n2
+    print("A Potenciação entre {}**{} = {}".format(n1, n2, potentiation))
+#If the user required the calculator do the rest of division, the funcion is below
+elif option == "//":
+    resdivision = n1 // n2
+    print("O resto da divisão entre {} // {} = {}".format(n1, n2, resdivision))
+#If the user required the calculator do the division, the funcion is below
 else:
-    divisao = n1 / n2
-    print("A divisão entre {} / {} = {}".format(n1, n2, divisao))
+    division = n1 / n2
+    print("A divisão entre {} / {} = {}".format(n1, n2, division))
